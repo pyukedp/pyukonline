@@ -1,11 +1,21 @@
-<!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Titel</title>
-  </head>
-  <body>
+<div id="container"><a href="http://www.macromedia.com/go/getflashplayer">Get the Flash Player</a> to see this player.
 
-  </body>
-</html>
+<a href="https://www.shoutcheap.com/shoutcast/">Shoutcast</a>
+
+<script type="text/javascript" src="https://www.shoutcheap.com/flashplayer/skins/swfobject.js"></script>
+
+<script type='text/javascript'>
+
+var s1 = new SWFObject('https://www.shoutcheap.com/flashplayer/skins/player.swf',
+
+'player',"340","50","9","#FFFFFF");
+
+s1.addParam('allowfullscreen','true');
+
+s1.addParam('allowscriptaccess','always')
+
+s1.addParam("flashvars","skin=https://www.shoutcheap.com/flashplayer/skins/skin-name.swf&title=Live Stream&type=sound&file=http://ipaddress:port/;stream.mp3 &13202692901&duration=99999&id=scplayer&autostart=true");
+
+s1.write("container");
+
+</script>
